@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false"
+    android:clipChildren="false"
+    android:padding="2dp"
+    android:layout_marginBottom="15dp">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0.0px"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        app:cardElevation="1dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:paddingEnd="5dp">
+
+
+            <ImageButton
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="-6dp"
+                android:layout_toRightOf="@+id/dishTitle"
+                android:backgroundTint="@color/white"
+
+                app:srcCompat="@drawable/ic_cross" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:id="@+id/dishImage"
+                    android:layout_width="144dp"
+                    android:layout_height="113dp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/borsch" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/dishTitle"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_toRightOf="@+id/cardImage"
+                android:fontFamily="@font/arsenal"
+                android:text="Борщ со свининой"
+                android:textColor="@color/text_black"
+                android:textSize="16sp"
+                android:lines="2"/>
+
+            <TextView
+                android:id="@+id/dishIngredientsCount"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dishTitle"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/cardImage"
+                android:fontFamily="@font/arsenal"
+                android:text="Ингридиенты: 12"
+                android:textColor="@color/text_black"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/dishStepsCount"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:text="Шаги: 8"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/arsenal"
+                android:textSize="14sp"
+                android:textColor="@color/text_black"
+                android:layout_toRightOf="@id/cardImage"
+                android:layout_below="@id/dishIngredientsCount"
+                android:layout_marginLeft="7dp"/>
+
+            <RatingBar
+                android:id="@+id/dishRatingBar"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/cardImage"
+                android:theme="@style/RatingBar"
+                android:layout_marginLeft="70dp"
+                android:layout_toRightOf="@+id/cardImage" />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

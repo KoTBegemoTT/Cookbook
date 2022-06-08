@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NeuronFragment">
+
+
+    <ImageView
+        android:id="@+id/selectedImage"
+        android:layout_width="313dp"
+        android:layout_height="187dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@android:drawable/ic_menu_gallery" />
+
+    <Button
+        android:id="@+id/selectImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Выбрать изображеие"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectedImage">
+    </Button>
+
+    <Button
+        android:id="@+id/sendImageRequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Определить ингредиенты"
+        android:enabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectImage">
+    </Button>
+
+    <TextView
+        android:id="@+id/founded_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Найденные ингредиенты:"
+        android:visibility="invisible"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/sendImageRequest"
+        app:layout_constraintTop_toBottomOf="@+id/sendImageRequest"></TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/founded_ingredient_recycler"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintStart_toStartOf="@+id/founded_text"
+        app:layout_constraintTop_toBottomOf="@+id/founded_text"
+        tools:listitem="@layout/founded_ingredient_item"
+        tools:itemCount="1">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

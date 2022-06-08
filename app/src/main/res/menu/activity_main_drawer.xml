@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_recipes"
+            android:icon="@drawable/ic_menu_recipes"
+            android:title="@string/menu_recipes" />
+        <item
+            android:id="@+id/nav_favorites"
+            android:icon="@drawable/ic_menu_favorites"
+            android:title="@string/menu_favorites" />
+<!--        <item-->
+<!--            android:id="@+id/nav_preparing"-->
+<!--            android:icon="@drawable/ic_menu_preparing"-->
+<!--            android:title="@string/menu_preparing" />-->
+<!--        <item-->
+<!--            android:id="@+id/nav_shopping_list"-->
+<!--            android:icon="@drawable/ic_menu_shopping_list"-->
+<!--            android:title="@string/menu_shopping_list" />-->
+        <item
+            android:id="@+id/nav_timer"
+            android:icon="@drawable/ic_menu_timer"
+            android:title="@string/menu_timer" />
+        <item
+            android:id="@+id/nav_neuron"
+            android:icon="@drawable/kamera3"
+            android:title="Сканер" />
+        <item
+            android:id="@+id/nav_options"
+            android:icon="@drawable/ic_menu_options"
+            android:title="@string/menu_options" />
+<!--        <item-->
+<!--            android:id="@+id/nav_menu_enter"-->
+<!--            android:icon="@drawable/ic_menu_enter"-->
+<!--            android:title="@string/menu_enter" />-->
+
+    </group>
+
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/secondGroup">
+        <item
+            android:id="@+id/nav_menu_enter"
+            android:icon="@drawable/ic_menu_enter"
+            android:title="@string/menu_enter" />
+    </group>
+</menu>

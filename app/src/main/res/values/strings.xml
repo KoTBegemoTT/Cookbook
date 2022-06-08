@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">CookBook</string>
+    <string name="recipes">Рецепты</string>
+    <string name="all_categoryes">Все категории...</string>
+    <string name="popular">Популярное</string>
+    <string name="account_options">Настройки аккаунта</string>
+    <string name="app_options">Настройки приложения</string>
+    <string name="name">Имя:</string>
+    <string name="name_content">Андрей федосеев</string>
+    <string name="email">E-mail:</string>
+    <string name="email_content">AndreyFedos@mail.ru</string>
+    <string name="password">Пароль:</string>
+    <string name="password_content">**********</string>
+    <string name="notifications">Уведомления</string>
+    <string name="categories">Категории</string>
+    <string name="save">Сохранить изменения</string>
+    <string name="login">Авторизация</string>
+    <string name="registration">Регистрация</string>
+    <string name="remember_me">Запомнить меня</string>
+    <string name="do_you_have_account">У вас нет аккаунта?</string>
+    <string name="enter">Войти</string>
+    <string name="register_now">Зарегистрироваться</string>
+    <string name="description">Описание</string>
+    <string name="start_cooking">Начать готовку</string>
+    <string name="add_to_favourites">Добавить в избранное</string>
+    <string name="ingredients">Ингредиенты</string>
+    <string name="portions">Порции</string>
+    <string name="for_main_dish">Для основного блюда</string>
+    <string name="ingredient">Сыр «маскарпоне»</string>
+    <string name="ingredient_amount">250 г</string>
+    <string name="points">......................................................................</string>
+    <string name="step_by_step_recipe">Пошаговый рецепт</string>
+
+    <!--    Descriptions-->
+    <string name="menuButton">Открывает меню слева</string>
+    <string name="searchButton">Открывает окно поиска</string>
+    <string name="soup_image">Изображаение супа</string>
+    <string name="text_fon">фон текста</string>
+    <string name="arrow_right">Кнопка, двигающая вправо RecyclerView с категориями</string>
+    <string name="arrow_left">Кнопка, двигающая влево RecyclerView с категориями</string>
+    <string name="nav_header">Navigation header</string>
+    <string name="cook">Кулинарная</string>
+    <string name="book">Книга</string>
+
+    <!--    Category names-->
+    <string name="soups">Супы</string>
+
+
+    <string name="menu_recipes">Рецепты</string>
+    <string name="menu_favorites">Избранное</string>
+    <string name="menu_preparing">Готовится</string>
+    <string name="menu_shopping_list">Список покупок</string>
+    <string name="menu_timer">Таймер</string>
+    <string name="menu_options">Настройки</string>
+    <string name="menu_enter">Войти в аккаут</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
